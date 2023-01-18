@@ -1,5 +1,5 @@
 def binary(arr,lb,ub,value):
-    if lb <0:
+    if lb > ub:
         print("Data not Found")
         return
     mid = (lb+ub)//2
@@ -14,4 +14,4 @@ def binary(arr,lb,ub,value):
         
 
 arr = [11, 12, 14, 19, 23, 76, 78, 91]
-binary(arr,0,len(arr)-1,11)
+binary(arr,0,len(arr)-1,20)
